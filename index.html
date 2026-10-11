@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Arjun Sekhar</title>
-<meta name="description" content="Arjun Sekhar — statistician working on survival analysis and customer analytics in banking.">
+<meta name="description" content="Arjun Sekhar — decision scientist and statistician at Commonwealth Bank, researching survival analysis for fraud detection.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -111,7 +111,7 @@ h3 { font: 500 1.45rem/1.25 var(--display); margin: 0; text-wrap: balance; }
 
 /* timeline */
 .entries { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.25rem; }
-.entries li { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 1rem; }
+.entries > li { display: grid; grid-template-columns: 7rem minmax(0, 1fr); gap: 1rem; }
 .entries .when { font: 400 .8rem/1.75 var(--mono); color: var(--muted); font-variant-numeric: tabular-nums; }
 .entries strong { font-weight: 600; display: block; }
 .entries span.sub { color: var(--muted); font-size: .94rem; }
@@ -120,6 +120,10 @@ h3 { font: 500 1.45rem/1.25 var(--display); margin: 0; text-wrap: balance; }
 dl.skills { display: grid; grid-template-columns: 9rem minmax(0, 1fr); gap: .75rem 1.25rem; margin: 0; }
 dl.skills dt { font: 500 .8rem/1.75 var(--mono); color: var(--muted); }
 dl.skills dd { margin: 0; }
+ul.points { margin: .5rem 0 0; padding-left: 1.1rem; color: var(--ink); font-size: .94rem; }
+ul.points li + li { margin-top: .3rem; }
+ul.points li::marker { color: var(--accent); }
+.sel { font-family: var(--mono); font-size: .92em; user-select: all; }
 code { font: 400 .9em var(--mono); }
 
 footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/1.6 var(--mono); color: var(--muted); }
@@ -127,7 +131,7 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
 @media (max-width: 720px) {
   .hero { grid-template-columns: minmax(0, 1fr); padding-block: 2.5rem 2rem; gap: 2rem; }
   section { grid-template-columns: minmax(0, 1fr); gap: .75rem; }
-  .entries li, dl.skills { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
+  .entries > li, dl.skills { grid-template-columns: minmax(0, 1fr); gap: .15rem; }
   dl.skills dd { margin-bottom: .6rem; }
 }
 </style>
@@ -147,13 +151,17 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
 
   <header class="hero" id="top">
     <div>
-      <p class="role">Statistician · Survival analysis</p>
+      <p class="role">Decision scientist · Statistician</p>
       <h1>Arjun Sekhar</h1>
-      <p class="lede">I work in customer analytics in the banking sector and am completing a Master of Research in Statistics at Macquarie University. I'm interested in where survival analysis and biostatistical methods can do real work outside the clinic, and where they can't.</p>
+      <p class="lede">I lead advanced analytics work at Commonwealth Bank and am completing a Master of Research in Statistics at Macquarie University. I'm interested in where survival analysis and biostatistical methods can do real work outside the clinic, and where they can't.</p>
       <div class="links">
         <a class="btn" href="https://github.com/asekhar177" target="_blank" rel="noopener">
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
           GitHub
+        </a>
+        <a class="btn" href="https://www.linkedin.com/in/asekhar177" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M0 1.15C0 .52.52 0 1.18 0h13.64C15.48 0 16 .52 16 1.15v13.7c0 .63-.52 1.15-1.18 1.15H1.18C.52 16 0 15.48 0 14.85V1.15zm4.94 12.24V6.17H2.54v7.22h2.4zM3.74 5.18c.84 0 1.36-.55 1.36-1.25-.02-.71-.52-1.25-1.34-1.25-.82 0-1.36.54-1.36 1.25 0 .7.52 1.25 1.33 1.25h.01zm4.91 8.21V9.36c0-.22.02-.43.08-.59.17-.43.57-.88 1.23-.88.87 0 1.21.66 1.21 1.63v3.87h2.4V9.25c0-2.22-1.18-3.25-2.76-3.25-1.28 0-1.84.7-2.16 1.2v.03h-.02l.02-.03V6.17h-2.4c.03.68 0 7.22 0 7.22h2.4z"/></svg>
+          LinkedIn
         </a>
         <a class="btn" href="#research">Current research</a>
       </div>
@@ -185,7 +193,7 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
         <div class="meta">MRes thesis · Macquarie University · 2026</div>
         <h3>When Do Random Survival Forests Enhance Fraud Detection? A Conditions-Based Comparison</h3>
         <p>Random survival forests are often proposed for fraud detection, but rarely tested against the conditions that should make them useful. This thesis compares them with logistic regression, Cox models, random forests and count models on two contrasting datasets, a transaction-level card dataset and an account-level dataset, to work out when a time-to-event framing earns its place.</p>
-        <p>Supervised by Prof. Samuel Müller and A/Prof. Maurizio Manuguerra.</p>
+        <p>Supervised by Prof. Samuel Müller and A/Prof. Maurizio Manuguerra. Presented at the BIBC conference.</p>
       </article>
       <p>Broader interests:</p>
       <ul class="interests">
@@ -199,23 +207,29 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
     </div>
   </section>
 
-  <section id="talks">
-    <h2>Presentations</h2>
-    <div class="content">
-      <ul class="entries">
-        <li><span class="when">Oral</span><div><strong>BIBC conference</strong></div></li>
-        <li><span class="when">Poster</span><div><strong>Australasian Applied Statistics Conference (AASC)</strong></div></li>
-      </ul>
-    </div>
-  </section>
-
   <section id="experience">
     <h2>Experience</h2>
     <div class="content">
       <ul class="entries">
-        <li><span class="when">Now</span><div><strong>Senior Analyst, Customer Analytics</strong><span class="sub">Banking sector</span></div></li>
-        <li><span class="when">Teaching</span><div><strong>Teaching, statistics</strong><span class="sub">Macquarie University and Torrens University</span></div></li>
-        <li><span class="when">Earlier</span><div><strong>Analyst</strong><span class="sub">Australian Prudential Regulation Authority (APRA)</span></div></li>
+        <li><span class="when">2024 – now</span><div><strong>Senior Analyst, Advanced Analytics &amp; Data</strong><span class="sub">Commonwealth Bank of Australia · Project &amp; initiative lead</span>
+          <ul class="points">
+            <li>Founded and lead the Knowledge Capital Centre of Excellence, setting analytical standards and writing economic insights briefed to executives.</li>
+            <li>Built Inferred NPS and promotability models used by retail and business banking leadership.</li>
+            <li>Designed a Next Best Conversation targeting engine with H2O.ai stacked ensembles and MLflow.</li>
+            <li>Rebuilt the public Regional Movers Index (15.6M customers) as an automated Python pipeline with ARIMA seasonal adjustment; the research has been cited by the AFR and ABC.</li>
+            <li>Built ESG stress-testing scenario models for senior risk committees and mentor junior analysts.</li>
+          </ul></div></li>
+        <li><span class="when">2023 – 2024</span><div><strong>Insights Analyst, People &amp; Fraud Analytics</strong><span class="sub">Commonwealth Bank of Australia</span>
+          <ul class="points">
+            <li>Fraud and scam analytics that improved transaction-monitoring rules and frontline triage.</li>
+            <li>SAS, SQL and Tableau dashboards used daily by risk and business executives.</li>
+          </ul></div></li>
+        <li><span class="when">2021 – 2022</span><div><strong>Analyst, Data &amp; Regulatory Frameworks</strong><span class="sub">Australian Prudential Regulation Authority (APRA)</span>
+          <ul class="points">
+            <li>Reviewed statutory returns (EFS, BEAR) across banking and insurance entities.</li>
+            <li>Worked with the RBA, ABS and Treasury to align financial data taxonomies.</li>
+          </ul></div></li>
+        <li><span class="when">Teaching</span><div><strong>Statistics teaching</strong><span class="sub">Macquarie University and Torrens University</span></div></li>
       </ul>
     </div>
   </section>
@@ -224,9 +238,10 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
     <h2>Education</h2>
     <div class="content">
       <ul class="entries">
-        <li><span class="when">2026</span><div><strong>Master of Research, Statistics</strong><span class="sub">Macquarie University</span></div></li>
-        <li><span class="when">Postgrad</span><div><strong>Applied Statistics</strong></div></li>
-        <li><span class="when">Undergrad</span><div><strong>Applied Mathematics</strong></div></li>
+        <li><span class="when">2026</span><div><strong>Master of Research (Statistics)</strong><span class="sub">Macquarie University</span></div></li>
+        <li><span class="when">2018 – 2022</span><div><strong>Master of Applied Statistics &amp; B.Sc. (Applied Mathematics)</strong><span class="sub">Macquarie University · Distinction average</span></div></li>
+        <li><span class="when">Member</span><div><strong>Graduate Statistician (GStat)</strong><span class="sub">Statistical Society of Australia</span></div></li>
+        <li><span class="when">Member</span><div><strong>International Biometric Society</strong></div></li>
       </ul>
     </div>
   </section>
@@ -235,9 +250,12 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
     <h2>Skills</h2>
     <div class="content">
       <dl class="skills">
-        <dt>Languages</dt><dd>R, Python, SQL, LaTeX</dd>
-        <dt>Survival &amp; ML</dt><dd><code>randomForestSRC</code>, <code>survival</code>, <code>survminer</code>, <code>timeROC</code>, <code>tidymodels</code>, scikit-learn, SHAP, LIME</dd>
-        <dt>Tools</dt><dd>RStudio, RMarkdown, Jupyter, VS Code, Microsoft SQL Server, SAS, Teradata</dd>
+        <dt>Methods</dt><dd>Survival analysis, random survival forests, stacked ensembles, class imbalance (SMOTE), time series (ARIMA), explainability (SHAP, LIME)</dd>
+        <dt>Applied AI</dt><dd>Agentic workflows, LLM orchestration and prompt pipelines</dd>
+        <dt>Languages</dt><dd>R, Python, SQL, SAS, LaTeX</dd>
+        <dt>R packages</dt><dd><code>randomForestSRC</code>, <code>survival</code>, <code>survminer</code>, <code>timeROC</code>, <code>tidymodels</code></dd>
+        <dt>Platforms</dt><dd>AWS SageMaker, H2O.ai, MLflow, Teradata, Tableau, Power BI</dd>
+        <dt>Domains</dt><dd>Customer science (NPS, propensity, retention), fraud and financial crime, prudential regulation (APRA, BEAR/FAR), ESG stress testing</dd>
       </dl>
     </div>
   </section>
@@ -245,7 +263,7 @@ footer { padding-top: 2rem; border-top: 1px solid var(--rule); font: 400 .78rem/
   <section id="contact">
     <h2>Contact</h2>
     <div class="content">
-      <p>The best way to reach me is through <a href="https://github.com/asekhar177" target="_blank" rel="noopener">GitHub</a> or ashakes98@gmail.com.</p>
+      <p>Email <span class="sel">ashakes98@gmail.com</span>, or find me on <a href="https://www.linkedin.com/in/asekhar177" target="_blank" rel="noopener">LinkedIn</a> and <a href="https://github.com/asekhar177" target="_blank" rel="noopener">GitHub</a>.</p>
     </div>
   </section>
 
